@@ -5,15 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --production",
-    "cypress:open": "cypress open",
-    "cypress:run:chrome": "cypress run --browser chrome",
-    "cypress:run:firefox": "cypress run --browser firefox",
-    "test:prepare": "./cypress/prepare.sh",
-    "test:open": "start-server-and-test start http://localhost:8000 cypress:open",
-    "test": "npm run test:chrome",
-    "test:chrome": "start-server-and-test start http://localhost:8000 cypress:run:chrome",
-    "test:firefox": "start-server-and-test start http://localhost:8000 cypress:run:firefox"
+    "build": "gulp build --production"
   },
   "author": "SAP Corona Warn-App Open Source Team <corona-warn-app.opensource@sap.com>",
   "license": "Apache-2.0",
@@ -49,8 +41,6 @@
   },
   "private": true,
   "devDependencies": {
-    "cypress": "^4.12.1",
-    "cypress-plugin-snapshots": "^1.4.4",
     "frontmatter": "0.0.3",
     "gulp-debug": "^4.0.0",
     "gulp-replace": "^1.0.0",
