@@ -19,7 +19,7 @@
 
 ## About this Repository
 
-This repository contains the source files of the official Corona-Warn-App Event Landingpage as it is available at [e.coronawarn.app](https://e.coronawarn.app). For information about the project, please see our [documentation repository](https://github.com/corona-warn-app/cwa-documentation).
+This repository contains the source files of the official Corona-Warn-App Event Landingpage as it is available at [e.coronawarn.app](https://e.coronawarn.app). The page opens for first-time users who have not installed the CWA app after scanning a check-in QR code with a native camera app. For information about the project, please see our [documentation repository](https://github.com/corona-warn-app/cwa-documentation).
 
 ## Development
 
