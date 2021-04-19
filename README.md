@@ -1,12 +1,9 @@
 <p align="center">
- <a href="https://www.coronawarn.app/en/"><img src="https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/images/CWA_title.png" width="400"></a>
+ <a href="https://e.coronawarn.app/en/"><img src="https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/images/CWA_title.png" width="400"></a>
 </p>
 
 <hr />
 
-<p align="center">
-    <a href="https://observatory.mozilla.org/analyze/coronawarn.app" title="Latest Results"><img src="https://img.shields.io/mozilla-observatory/grade/coronawarn.app" alt="Mozilla HTTP Observatory Grade"></a>
-</p>
 <p align="center">
     <a href="#about-this-repository">About this Repository</a> •
     <a href="#development">Development</a> •
@@ -14,7 +11,7 @@
     <a href="#support-and-feedback">Support and Feedback</a> •
     <a href="#how-to-contribute">How to contribute</a> •
     <a href="#licensing">Licensing</a> •
-    <a href="https://www.coronawarn.app/en/">Web Site</a>
+    <a href="https://e.coronawarn.app/en/">Event Landing Page Website</a>
 </p>
 <hr />
 
@@ -22,7 +19,7 @@
 
 ## About this Repository
 
-This repository contains the source files of the official website for the Corona-Warn-App as it is available at [coronawarn.app](https://coronawarn.app). For information about the project, please see our [documentation repository](https://github.com/corona-warn-app/cwa-documentation).
+This repository contains the source files of the official Corona-Warn-App Event Landingpage as it is available at [e.coronawarn.app](https://e.coronawarn.app). For information about the project, please see our [documentation repository](https://github.com/corona-warn-app/cwa-documentation).
 
 ## Development
 
@@ -49,29 +46,9 @@ npm start
 
 It will automatically use `public` as base directory and watch for file changes. Go to `localhost:8000` to view the website.
 
-### Changing Things
+### Updating e.coronawarn.app
 
-Manuals for the most common use cases of updating website content are available in the [docs folder](./docs/).
-
-### Testing
-
-[Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests. tests are located in the ```cypress/integration``` folder and can be run with:
-
-```bash
-  npm run test:prepare
-  npm run test
-```
-Alternatively, run `npm run test:open` for simpler test development. Be aware that you should only run one file after another and not click on _Run all specs_ since the screenshot test library has a bug which causes falsy tests for _Visual Comparison_.
-
-`npm run test:prepare` copies fixtures from `./cypress/fixtures` that are required for e2e tests. Store your test assets there, if required.
-
-> IMPORTANT: In case _Visual Comparison_ tests are failing after changes to css, header or footer, delete the `.png` files from `./cypress/integration/__image_screenshots__` and run the blog e2e tests with `npm run test` (without :open!) to recreate the screenshots. Additionally, apply the screenshots to the codebase.
-
-Best practice is to use `data-e2e="your_test_id"` element attributes to select specific elements, eg `cy.get('[data-e2e="cta-button-1"]').click()` instead of `cy.get('.container .infobox a.button').contains('DOWNLOAD').click()`.
-
-### Updating coronawarn.app
-
-Any direct commits and merged pull requests will automatically trigger follow-up actions to build and deploy the changes to [coronawarn.app](https://coronawarn.app). The respective [GitHub Actions](https://github.com/features/actions) are available in the [.github/workflows](.github/workflows) directory of this repository.
+Any direct commits and merged pull requests will automatically trigger follow-up actions to build and deploy the changes to [e.coronawarn.app](https://coronawarn.app). The respective [GitHub Actions](https://github.com/features/actions) are available in the [.github/workflows](.github/workflows) directory of this repository.
 
 ## Documentation
 
