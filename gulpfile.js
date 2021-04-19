@@ -238,7 +238,7 @@ function build_sitemap() {
   return gulp
     .src([PATHS.dist + "/**/*.html", "!" + PATHS.dist + '/error.html'])
     .pipe(sitemap({
-      siteUrl: "https://coronawarn.app",
+      siteUrl: "https://e.coronawarn.app",
       priority: function (siteUrl, loc, entry) {
         // Reduce priority by 0.2 per level
         return 1.0 - (entry.file.split('/').length - 1) * 0.2
