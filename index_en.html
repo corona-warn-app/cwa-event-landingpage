@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="The website of open-source project Corona-Warn-App. The Corona-Warn-App is an app that helps trace infection chains of COVID-19 in Germany." />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="referrer" content="no-referrer" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/custom.css" />
+		<title>Download Corona-Warn-App</title>
+		
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function(event) { 
+				if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
+					console.log("redirect android");
+					window.location = 'market://details?id=de.rki.coronawarnapp';
+					document.getElementById("store_apple").classList.add("d-none");
+				}
+				else if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){
+					console.log("redirect apple");
+					window.location.href = 'https://apps.apple.com/de/app/corona-warn-app/id1512595757';
+					document.getElementById("store_android").classList.add("d-none");
+				}
+				else {
+					console.log("no redirect");
+				}
+			});
+		</script>
+	</head>
+	<body>
+  
+		<header class="header">
+		  <div class="container">
+			  <div class="row navbar">
+				<div class="col-12">
+				  <a class="logo" href="https://www.coronawarn.app/en/" title="Corona Warn App – Open Source Project">
+					<img src="./img/logo.svg" alt="Corona-Warn-App – Open Source Project" class="logo-image" />
+				  </a>
+				</div>
+			  </div>
+		  </div>
+		</header>
+
+		<div class="main-content">
+			<section class="component download pb-0">
+				<div class="container h-100">
+					<picture class="download-mobile-image d-block d-lg-none">
+						<source srcset="./img/app-mockup@2x.webp" type="image/webp">
+						<img class="download-mobile-image" src="./img/app-mockup@2x.png" title="Corona Warn App" alt="Corona-Warn-App Smartphone" loading="lazy" />
+					</picture>
+					<div class="row align-items-end align-items-lg-center justify-content-lg-between h-100">
+						<div class="col col-12 col-lg-6 bg-white p-3">
+							<h1 class="headline headline-heavy">Download the Corona-Warn-App to check in</h1>
+							<p class="lead">Available for download on Apple App Store and Google Play.</p>
+							<div class="row">
+								<div class="col col-12 col-md-6 mb-3" id="store_apple">
+									<a href="https://apps.apple.com/de/app/corona-warn-app/id1512595757" target="_blank" rel="noopener noreferrer">
+										<img class="img-fluid w-100" src="./img/App_Store_Badge_US-UK.svg" alt="Laden sie die Corona-Warn-App aus dem Apple App Store Icon" />
+									</a>
+								</div>
+								<div class="col col-12 col-md-6 mb-3" id="store_android">
+									<a href="https://play.google.com/store/apps/details?id=de.rki.coronawarnapp" target="_blank" rel="noopener noreferrer">
+										<img class="img-fluid w-100" src="./img/google-play-badge.svg" alt="Laden sie die Corona-Warn-App aus dem Google Play Store Icon" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col col-12 col-sm-12 col-md-12 col-lg-5 d-none d-lg-block">
+							<picture class="section-main-image">
+								<source srcset="./img/app-mockup@2x.webp" type="image/webp">
+								<img class="section-main-image" src="./img/app-mockup@2x.png" title="Corona Warn App" alt="Corona-Warn-App Smartphone" loading="lazy" />
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	
+		<footer class="footer footer_home">
+			<div class="container align-items-between">
+				<div class="row justify-content-between">
+					<div class="col-8 col-sm-5 col-md-4">
+						<a class="logo" href="https://www.coronawarn.app/en/">
+							<img src="./img/logo.svg" alt="The Corona Warn App – Open Source Projekt" />
+						</a>
+					</div>
+					<div class="col-16 col-sm-7 col-md-8">
+						<div class="row">
+							<div class="link-item col-6 col-md-4">
+								<strong>Learn more</strong>
+								<a href="https://github.com/corona-warn-app/cwa-documentation" target="_blank" rel="noopener noreferrer">Docs</a>
+								<a href="https://www.coronawarn.app/en/faq/">FAQ</a>
+							</div>
+							<div class="link-item col-6 col-md-4">
+								<strong>About</strong>
+								<a href="https://www.coronawarn.app/en/privacy/">Privacy Statement</a>
+								<a href="https://www.coronawarn.app/en/terms-of-use/">Terms of use</a>
+								<a href="https://www.coronawarn.app/en/imprint/">Legal notice</a>
+							</div>
+							<div class="link-item col-6 col-md-4">
+								<strong>Get involved</strong>
+								<a href="https://www.coronawarn.app/en/community/">Community</a>
+								<a href="https://github.com/corona-warn-app"  target="_blank" rel="noopener noreferrer">
+									<span class="icon icon_img icon_github">
+										<img src="./img/github_white.svg" alt="The Corona-Warn-App project on GitHub" class="icon-image" />
+									</span>
+								</a>
+							</div>
+							<div class="link-item col-6 col-md-4" data-e2e="hotline-app">
+								<strong>Hotline App</strong>
+								<a href="tel:08007540001">0800 7540001</a>
+								<a href="tel:+49 30 498 75401">+49 30 498 75401</a>
+							</div>
+							<div class="link-item col-6 col-md-4" data-e2e="hotline-tan">
+								<strong>Hotline TAN</strong>
+								<a href="tel:08007540002">0800 7540002</a>
+								<a href="tel:+49 30 498 75402">+49 30 498 75402</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright-bar">
+					<div class="copyright text-center text-sm-left">
+						<a href="https://github.com/corona-warn-app/cwa-website/graphs/contributors" target="_blank" rel="noopener noreferrer">© 2020 - The authors of the Corona-Warn-App open-source project</a>
+						<div class="privacy text-center text-sm-right"></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
