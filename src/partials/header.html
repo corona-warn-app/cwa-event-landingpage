@@ -1,0 +1,10 @@
+<header class="header">
+  <div class="container">
+    {{#unless lang_de}}
+    {{> global-nav language=global.lang.en}}
+    {{/unless}}
+    {{#if lang_de}}
+    {{> global-nav language=global.lang.de}}
+    {{/if}}
+  </div>
+</header>

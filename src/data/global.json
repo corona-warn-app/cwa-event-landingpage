@@ -1,0 +1,207 @@
+{
+    "favicon": {
+        "url": "/assets/img/icons/",
+        "name": "favicon",
+        "include": "all"
+    },
+    "lang": {
+        "en": {
+            "lang": {
+                "en": {
+                    "long": "English",
+                    "short": "EN"
+                },
+                "de": {
+                    "long": "German",
+                    "short": "DE"
+                }
+            },
+            "logo": {
+                "title": "Corona Warn App – Open Source Project"
+            },
+            "footer-nav": [
+                {
+                    "title": "Learn more",
+                    "links": [
+                        {
+                            "title": "Docs",
+                            "url": "https://github.com/corona-warn-app/cwa-documentation",
+                            "external": true
+                        },
+                        {
+                            "title": "FAQ",
+                            "url": "https://www.coronawarn.app/en/en/faq/"
+                        }
+                    ]
+                },
+                {
+                    "title": "About",
+                    "links": [
+                        {
+                            "title": "Privacy Statement",
+                            "url": "https://www.coronawarn.app/en/en/privacy/"
+                        },
+                        {
+                            "title": "Terms of use",
+                            "url": "https://www.coronawarn.app/en/en/terms-of-use/"
+                        },
+                        {
+                            "title": "Legal notice",
+                            "url": "https://www.coronawarn.app/en/en/imprint/"
+                        }
+                    ]
+                },
+                {
+                    "title": "Get involved",
+                    "links": [
+                        {
+                            "title": "Community",
+                            "url": "/en/community/"
+                        },
+                        {
+                            "id": "github",
+                            "icon": "github",
+                            "icon-url": "/assets/img/icons/github_white.svg",
+                            "title": "The Corona-Warn-App project on GitHub",
+                            "url": "https://github.com/corona-warn-app",
+                            "external": true
+                        }
+                    ]
+                },
+                {
+                    "title": "Hotline App",
+                    "links": [
+                        {
+                            "title": "0800 7540001",
+                            "url": "tel:08007540001"
+                        },
+                        {
+                            "title": "+49 30 498 75401",
+                            "url": "tel:+49 30 498 75401"
+                        }
+                    ],
+                    "testid": "hotline-app"
+                },
+                {
+                    "title": "Hotline TAN",
+                    "links": [
+                        {
+                            "title": "0800 7540002",
+                            "url": "tel:08007540002"
+                        },
+                        {
+                            "title": "+49 30 498 75402",
+                            "url": "tel:+49 30 498 75402"
+                        }
+                    ],
+                    "testid": "hotline-tan"
+                }
+            ],
+            "copyright": {
+                "title": "© 2020 - The authors of the Corona-Warn-App open-source project",
+                "url": "https://github.com/corona-warn-app/cwa-website/graphs/contributors",
+                "external": true
+            }
+        },
+        "de": {
+            "lang": {
+                "en": {
+                    "long": "Englisch",
+                    "short": "EN"
+                },
+                "de": {
+                    "long": "Deutsch",
+                    "short": "DE"
+                }
+            },
+            "logo": {
+                "title": "Corona Warn App – Open Source Projekt"
+            },
+            "footer-nav": [
+                {
+                    "title": "Mehr erfahren",
+                    "links": [
+                        {
+                            "title": "Dokumentation",
+                            "url": "https://github.com/corona-warn-app/cwa-documentation",
+                            "external": true
+                        },
+                        {
+                            "title": "FAQ",
+                            "url": "https://www.coronawarn.app/de/faq/"
+                        }
+                    ]
+                },
+                {
+                    "title": "Über uns",
+                    "links": [
+                        {
+                            "title": "Datenschutzerklärung",
+                            "url": "https://www.coronawarn.app/de/privacy/"
+                        },
+                        {
+                            "title": "Nutzungsbedingungen",
+                            "url": "https://www.coronawarn.app/de/terms-of-use/"
+                        },
+                        {
+                            "title": "Impressum",
+                            "url": "https://www.coronawarn.app/de/imprint/"
+                        }
+                    ]
+                },
+                {
+                    "title": "Mitmachen",
+                    "links": [
+                        {
+                            "title": "Community",
+                            "url": "https://www.coronawarn.app/de/community/"
+                        },
+                        {
+                            "id": "github",
+                            "icon": "github",
+                            "icon-url": "/assets/img/icons/github_white.svg",
+                            "title": "Das Corona-Warn-App Projekt auf GitHub",
+                            "url": "https://github.com/corona-warn-app",
+                            "external": true
+                        }
+                    ]
+                },
+                {
+                    "title": "Hotline App",
+                    "links": [
+                        {
+                            "title": "0800 7540001",
+                            "url": "tel:08007540001"
+                        },
+                        {
+                            "title": "+49 30 498 75401",
+                            "url": "tel:+49 30 498 75401"
+                        }
+
+                    ],
+                    "testid": "hotline-app"
+                },
+                {
+                    "title": "Hotline TAN",
+                    "links": [
+                        {
+                            "title": "0800 7540002",
+                            "url": "tel:08007540002"
+                        },
+                        {
+                            "title": "+49 30 498 75402",
+                            "url": "tel:+49 30 498 75402"
+                        }
+
+                    ],
+                    "testid": "hotline-tan"
+                }
+            ],
+            "copyright": {
+                "title": "© 2020 - Mitwirkende Personen des Open-Source-Projekts für Corona-Warn-App",
+                "url": "https://github.com/corona-warn-app/cwa-website/graphs/contributors",
+                "external": true
+            }
+        }
+    }
+}
