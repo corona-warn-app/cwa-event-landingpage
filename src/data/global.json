@@ -30,7 +30,7 @@
                         },
                         {
                             "title": "FAQ",
-                            "url": "https://www.coronawarn.app/en/en/faq/"
+                            "url": "https://www.coronawarn.app/en/faq/"
                         }
                     ]
                 },
@@ -39,15 +39,15 @@
                     "links": [
                         {
                             "title": "Privacy Statement",
-                            "url": "https://www.coronawarn.app/en/en/privacy/"
+                            "url": "https://www.coronawarn.app/en/privacy/"
                         },
                         {
                             "title": "Terms of use",
-                            "url": "https://www.coronawarn.app/en/en/terms-of-use/"
+                            "url": "https://www.coronawarn.app/en/terms-of-use/"
                         },
                         {
                             "title": "Legal notice",
-                            "url": "https://www.coronawarn.app/en/en/imprint/"
+                            "url": "https://www.coronawarn.app/en/imprint/"
                         }
                     ]
                 },
@@ -56,7 +56,7 @@
                     "links": [
                         {
                             "title": "Community",
-                            "url": "/en/community/"
+                            "url": "https://www.coronawarn.app/en/community/"
                         },
                         {
                             "id": "github",
