@@ -45,8 +45,7 @@ gulp.task(
       pages, javascript, images_minify, copy
     ),
     images_webp,
-    sass,
-    build_sitemap
+    sass
   )
 );
 
@@ -231,18 +230,4 @@ function watch(done) {
     .watch('src/assets/img/**/*')
     .on('all', gulp.series(images_minify, images_webp, reload));
   done();
-}
-
-// generate an up-to-date sitemap
-function build_sitemap() {
-  return gulp
-    .src([PATHS.dist + "/**/*.html", "!" + PATHS.dist + '/error.html'])
-    .pipe(sitemap({
-      siteUrl: "https://e.coronawarn.app",
-      priority: function (siteUrl, loc, entry) {
-        // Reduce priority by 0.2 per level
-        return 1.0 - (entry.file.split('/').length - 1) * 0.2
-      }
-    }))
-    .pipe(gulp.dest(PATHS.dist))
 }
