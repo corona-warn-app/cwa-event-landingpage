@@ -116,3 +116,6 @@ public
 # cypress
 cypress/screenshots/
 cypress/videos/
+
+# eclipse project files
+/.project
