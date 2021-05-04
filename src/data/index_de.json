@@ -1,10 +1,12 @@
 {
     "section-main": {
         "headline": {
-            "title": "Laden Sie die Corona-Warn-App herunter, um sich einzuchecken."
+            "title": "Laden Sie die Corona-Warn-App herunter."
         },
         "content": {
-            "text": "Zum Download verfügbar im Apple App Store und auf Google Play."
+            "text": "Zum Download verfügbar im Apple App Store und auf Google Play.",
+            "warningiOS": "Ihr Browser ist nicht kompatibel. Bitte öffnen Sie den Link in Safari.",
+            "warningAndroid": "Ihr Browser ist nicht kompatibel. Bitte öffnen Sie den Link in Chrome."
         },
         "image": {
             "url": "/assets/img/app-mockup@2x.png",
