@@ -1,5 +1,5 @@
 var lang = "en";
-
+sessionStorage.setItem('originalUrl', window.location.href);
 if (
   typeof navigator.languages !== "undefined" &&
   navigator.languages.length > 0

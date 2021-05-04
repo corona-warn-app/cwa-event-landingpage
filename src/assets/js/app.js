@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
+    const originalUrl = sessionStorage.getItem('originalUrl');
+    sessionStorage.removeItem('originalUrl');
+    if (originalUrl) {
+        const originalUrlElement = document.getElementById("originalUrl");
+        originalUrlElement.classList.remove("d-none");
+        originalUrlElement.href = originalUrl;
+        originalUrlElement.text = originalUrl;
+    }
     const lowAgent = navigator.userAgent.toLowerCase();
     if(lowAgent.indexOf("iphone") > -1 && (lowAgent.indexOf("duckduckgo") > -1 ) ){
         document.getElementById("warningiOS").classList.remove("d-none");
@@ -11,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementById("lead").classList.add("d-none");
     }
     else if(lowAgent.indexOf("android") > -1){
-        // window.location = 'https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=de.rki.coronawarnapp&ddl=1&pcampaignid=web_ddl_1';
+        window.location = 'https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=de.rki.coronawarnapp&ddl=1&pcampaignid=web_ddl_1';
         document.getElementById("store_apple").classList.add("d-none");
     }
     else if(lowAgent.indexOf("iphone") > -1){
