@@ -3,29 +3,33 @@
     <section class="component download pb-0">
         <div class="container h-100">
             <picture class="download-mobile-image d-block d-lg-none">
-                <source srcset="/assets/img/app-mockup@2x.webp" type="image/webp">
+                <source srcset="/assets/img/app-mockup@2x.webp" type="image/webp" />
                 <img class="download-mobile-image" src="/assets/img/app-mockup@2x.png" title="Corona Warn App" alt="Corona-Warn-App Smartphone" loading="lazy" />
             </picture>
             <div class="row align-items-end align-items-lg-center justify-content-lg-between h-100">
                 <div class="col col-12 col-lg-6 bg-white p-3">
                     <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
-                    <p class="lead">{{page-contents.section-main.content.text}}</p>
+                    <p class="lead" id="lead">{{page-contents.section-main.content.text}}</p>
+                    <p class="warning d-none" id="warningiOS">{{page-contents.section-main.content.warningiOS}}</p>
+                    <p class="warning d-none"  id="warningAndroid">{{page-contents.section-main.content.warningAndroid}}</p>
+                    <a class="d-none originalUrl" id="originalUrl" href="" target="_blank" rel="noopener noreferrer"> </a>
+    
                     <div class="row">
                         <div class="col col-12 col-md-6 mb-3" id="store_apple">
                             <a href="https://apps.apple.com/de/app/corona-warn-app/id1512595757" target="_blank" rel="noopener noreferrer">
-                                <img class="img-fluid w-100" src="/assets/img/App_Store_Badge_US-UK.svg" alt="Apple App Store Icon" />
+                                <img class="img-fluid w-100" src="/assets/img/App_Store_Badge_DE.svg" alt="Apple App Store Icon" />
                             </a>
                         </div>
                         <div class="col col-12 col-md-6 mb-3" id="store_android">
                             <a href="https://play.google.com/store/apps/details?id=de.rki.coronawarnapp" target="_blank" rel="noopener noreferrer">
-                                <img class="img-fluid w-100" src="/assets/img/google-play-badge.svg" alt="Google Play Store Icon" />
+                                <img class="img-fluid w-100" src="/assets/img/google-play-badge.png" alt="Google Play Store Icon" />
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-5 d-none d-lg-block">
                     <picture class="section-main-image">
-                        <source srcset="/assets/img/app-mockup@2x.webp" type="image/webp">
+                        <source srcset="/assets/img/app-mockup@2x.webp" type="image/webp" />
                         <img class="section-main-image" src="/assets/img/app-mockup@2x.png" title="Corona-Warn-App" alt="Corona-Warn-App Smartphone" loading="lazy" />
                     </picture>
                 </div>

@@ -1,10 +1,12 @@
 {
     "section-main": {
         "headline": {
-            "title": "Download the Corona-Warn-App to check in."
+            "title": "Download the Corona-Warn-App."
         },
         "content": {
-            "text": "Available for download on Apple App Store and Google Play."
+            "text": "Available for download on Apple App Store and Google Play.",
+            "warningiOS": "Your Browser is not compatible. Please open the link in Safari.",
+            "warningAndroid": "Your Browser is not compatible. Please open the link in Chrome."
         },
         "image": {
             "url": "/assets/img/app-mockup@2x.png",
