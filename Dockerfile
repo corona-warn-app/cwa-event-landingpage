@@ -14,5 +14,5 @@ COPY src ${WORK_DIR}/src
 RUN npm run build
 
 # create nginx execution environment
-FROM mtr.external.otc.telekomcloud.com/paas/mcs-nginx:v1.16.1
+FROM nginx:1.20.0
 COPY --from=build /build/public /usr/share/nginx/html/
