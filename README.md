@@ -11,15 +11,16 @@
     <a href="#support-and-feedback">Support and Feedback</a> •
     <a href="#how-to-contribute">How to contribute</a> •
     <a href="#licensing">Licensing</a> •
-    <a href="https://e.coronawarn.app/en/">Event Landing Page Website</a>
+    <a href="https://e.coronawarn.app/en/">Event landing page Website</a> •
+    <a href="https://e.coronawarn.app/en/">Rapid antigen test landing page Website</a>
 </p>
 <hr />
 
-# Corona-Warn-App: Event Landingpage
+# Corona-Warn-App: Landing page
 
 ## About this Repository
 
-This repository contains the source files of the official Corona-Warn-App Event Landingpage as it is available at [e.coronawarn.app](https://e.coronawarn.app). The page opens for first-time users who have not installed the CWA app after scanning a check-in QR code with a native camera app. For information about the project, please see our [documentation repository](https://github.com/corona-warn-app/cwa-documentation).
+This repository contains the source files of the official Corona-Warn-App landing page as it is available at [e.coronawarn.app](https://e.coronawarn.app) (for event-registration) or at [s.coronawarn.app](https://s.coronawarn.app) (for rapid antigen tests). The page opens for first-time users who have not installed the CWA app after scanning a check-in QR code or a QR code for a rapid antigen test result with a native camera app. For information about the project, please see our [documentation repository](https://github.com/corona-warn-app/cwa-documentation).
 
 ## Development
 
@@ -46,9 +47,9 @@ npm start
 
 It will automatically use `public` as base directory and watch for file changes. Go to `localhost:8000` to view the website.
 
-### Updating e.coronawarn.app
+### Updating the landing page
 
-Any direct commits and merged pull requests will automatically trigger follow-up actions to build and deploy the changes to [e.coronawarn.app](https://coronawarn.app). The respective [GitHub Actions](https://github.com/features/actions) are available in the [.github/workflows](.github/workflows) directory of this repository.
+Any direct commits and merged pull requests will automatically trigger follow-up actions to build and deploy the changes to [e.coronawarn.app](https://e.coronawarn.app) and [s.coronawarn.app](https://s.coronawarn.app). The respective [GitHub Actions](https://github.com/features/actions) are available in the [.github/workflows](.github/workflows) directory of this repository.
 
 ## Documentation
 
