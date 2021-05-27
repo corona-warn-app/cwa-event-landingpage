@@ -20,7 +20,8 @@
 
 ## About this Repository
 
-This repository contains the source files of the official Corona-Warn-App landing page as it is available at [e.coronawarn.app](https://e.coronawarn.app) (for event-registration) or at [s.coronawarn.app](https://s.coronawarn.app) (for rapid antigen tests). The page opens for first-time users who have not installed the CWA app after scanning a check-in QR code or a QR code for a rapid antigen test result with a native camera app. For information about the project, please see our [documentation repository](https://github.com/corona-warn-app/cwa-documentation).
+This repository contains the source files of the official Corona-Warn-App landing page as it is available at [e.coronawarn.app](https://e.coronawarn.app) (for event-registration) or at [s.coronawarn.app](https://s.coronawarn.app) (for rapid antigen tests). The page opens for first-time users who have not installed the CWA app after scanning a check-in QR code or a QR code for a rapid antigen test result with a native camera app. The page also opens for users who clicked a link on an external website to import a rapid antigen test result using a not supported browser.
+For information about the project, please see our [documentation repository](https://github.com/corona-warn-app/cwa-documentation).
 
 ## Development
 
