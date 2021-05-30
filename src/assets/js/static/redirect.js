@@ -1,5 +1,5 @@
 var lang = "en";
-if (window.location.href.indexOf(":/s.coronawarn.app") !== -1) {
+if (window.location.href.indexOf("://s.coronawarn.app") !== -1) {
   sessionStorage.setItem('originalUrl', window.location.href);
 }
 if (

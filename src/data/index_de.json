@@ -6,7 +6,10 @@
         "content": {
             "text": "Zum Download verfügbar im Apple App Store und auf Google Play.",
             "warningiOS": "Ihr Browser ist nicht kompatibel. Bitte öffnen Sie den Link in Safari.",
-            "warningAndroid": "Ihr Browser ist nicht kompatibel. Bitte öffnen Sie den Link in Chrome."
+            "infoiOS": "Drücken Sie lange auf den Link und wählen Sie „In Corona-Warn öffnen”",
+            "infoAndroid": "Drücken Sie lange auf den Link und wählen Sie 'Link in externer App öffnen'",
+            "downloadInfo": "Falls Sie die Corona-Warn-App noch nicht installiert haben, klicken Sie hier zum installieren.",
+            "warningAndroid": "Ihr Browser ist nicht kompatibel. Bitte öffnen Sie den Link in Chrome oder aktivieren Sie in den Einstellungen 'Links in anderen Apps öffnen'"
         },
         "image": {
             "url": "/assets/img/app-mockup@2x.png",
