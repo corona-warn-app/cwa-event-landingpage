@@ -75,6 +75,7 @@ function copy() {
   });
   gulp.src(PATHS.rootAssets).pipe(gulp.dest(PATHS.dist));
   gulp.src(PATHS.wellKnown).pipe(gulp.dest(PATHS.dist + '/.well-known'));
+  gulp.src(PATHS.wellKnown).pipe(gulp.dest(PATHS.dist));
   return gulp.src(PATHS.assets).pipe(gulp.dest(PATHS.dist + '/assets'));
 }
 
