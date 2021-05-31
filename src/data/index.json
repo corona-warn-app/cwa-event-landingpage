@@ -5,11 +5,11 @@
         },
         "content": {
             "text": "Available for download on Apple App Store and Google Play.",
-            "warningiOS": "Your Browser is not compatible. Please open the link in Safari.",
-            "infoiOS": "Press long on the link and choose „Open in Corona-Warn",
-            "infoAndroid": "Press long on the link and choose 'Open link in external App'",
+            "warningiOS": "Your browser is not compatible. Please open the link in Safari.",
+            "infoiOS": "Press long on the link and choose “Open in Corona-Warn”.",
+            "infoAndroid": "Press long on the link and choose 'Open link in external App'.",
             "downloadInfo": "If you have not yet installed the Corona-Warn-App, press here to install it.",
-            "warningAndroid": "Your Browser is not compatible. Please open the link in Chrome or enable the setting 'Open links in other apps'"
+            "warningAndroid": "Your browser is not compatible. Please open the link in Chrome or enable the setting 'Open links in other apps'."
         },
         "image": {
             "url": "/assets/img/app-mockup@2x.png",
