@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         const originalUrlElement = document.getElementById("originalUrl");
         originalUrlElement.classList.remove("d-none");
         originalUrlElement.href = originalUrl;
-        originalUrlElement.text = "Schnelltest Link";
+        originalUrlElement.text = "Link zu Ihrem Test";
     }
     const lowAgent = navigator.userAgent.toLowerCase();
     if(lowAgent.indexOf("iphone") > -1 && (lowAgent.indexOf("duckduckgo") > -1 ) ){
