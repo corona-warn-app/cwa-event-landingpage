@@ -16,6 +16,7 @@ const rimraf = require('rimraf');
 const webp = require('gulp-webp');
 const jsonTransform = require('gulp-json-transform');
 var rename = require("gulp-rename");
+const pluginSass = require('gulp-sass')(require('node-sass'));
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -116,9 +117,9 @@ function sass() {
     .src('src/assets/scss/style.scss')
     .pipe($.sourcemaps.init())
     .pipe(
-      $.sass({
+        pluginSass({
         includePaths: PATHS.sass
-      }).on('error', $.sass.logError)
+      }).on('error', pluginSass.logError)
     )
     .pipe($.postcss(postCssPlugins))
     .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
