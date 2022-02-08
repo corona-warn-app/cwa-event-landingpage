@@ -50,7 +50,8 @@ It will automatically use `public` as base directory and watch for file changes.
 
 ### Updating the landing page
 
-Any direct commits and merged pull requests will automatically trigger follow-up actions to build and deploy the changes to [e.coronawarn.app](https://e.coronawarn.app) and [s.coronawarn.app](https://s.coronawarn.app). The respective [GitHub Actions](https://github.com/features/actions) are available in the [.github/workflows](.github/workflows) directory of this repository.
+Pull Requests can be opened here on GitHub and will be merged into the `main` branch. Deploying of the chnages to [e.coronawarn.app](https://e.coronawarn.app) (for event-registration) and [s.coronawarn.app](https://s.coronawarn.app) is done manually.
+Thus, even if a PR is merged into `main` here on GitHub , the change is not immediately visible on the pages, but only after the change was deployed.
 
 ## Documentation
 
