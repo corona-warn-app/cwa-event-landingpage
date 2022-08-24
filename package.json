@@ -34,12 +34,13 @@
     "lodash.throttle": "^4.1.1",
     "node-sass": "^7.0.1",
     "panini": "^1.7.2",
+    "postcss": "^8.4.16",
     "rimraf": "^3.0.2",
+    "trim-newlines": ">=3.0.1",
     "vinyl-named": "^1.1.0",
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0",
-    "yargs": "^15.4.1",
-    "trim-newlines": ">=3.0.1"
+    "yargs": "^15.4.1"
   },
   "private": true,
   "devDependencies": {
