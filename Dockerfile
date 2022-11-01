@@ -1,4 +1,4 @@
-FROM node:14 as build
+FROM node:18 as build
 
 ARG WORK_DIR=/build
 WORKDIR ${WORK_DIR}
