@@ -16,7 +16,7 @@ const rimraf = require('rimraf');
 const webp = require('gulp-webp');
 const jsonTransform = require('gulp-json-transform');
 var rename = require("gulp-rename");
-const pluginSass = require('gulp-sass')(require('node-sass'));
+const pluginSass = require('gulp-sass')(require('sass'));
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
