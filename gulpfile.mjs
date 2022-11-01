@@ -1,25 +1,31 @@
 'use strict';
-const plugins = require('gulp-load-plugins');
-const yargs = require('yargs');
-const browser = require('browser-sync');
-const gulp = require('gulp');
-const replace = require('gulp-replace');
-const panini = require('panini');
-const yaml = require('js-yaml');
-const fs = require('fs');
-const webpackStream = require('webpack-stream');
-const webpack2 = require('webpack');
-const named = require('vinyl-named');
-const autoprefixer = require('autoprefixer');
-const sitemap = require('gulp-sitemap');
-const rimraf = require('rimraf');
-const webp = require('gulp-webp');
-const jsonTransform = require('gulp-json-transform');
-var rename = require("gulp-rename");
-const pluginSass = require('gulp-sass')(require('sass'));
 
-// Load all Gulp plugins into one variable
-const $ = plugins();
+import gulp from 'gulp';
+import cleanCss from 'gulp-clean-css';
+import gulpIf from 'gulp-if';
+import imagemin, { mozjpeg } from 'gulp-imagemin';
+import postcss from 'gulp-postcss';
+import sourcemaps from 'gulp-sourcemaps';
+import uglify from 'gulp-uglify';
+import webp from 'gulp-webp';
+
+import autoprefixer from 'autoprefixer';
+import browser from 'browser-sync';
+import fs from 'fs';
+import named from 'vinyl-named';
+import panini from 'panini';
+import rimraf from 'rimraf';
+import webpack2 from 'webpack';
+import webpackStream from 'webpack-stream';
+import yaml from 'js-yaml';
+
+import npmYargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
+const yargs = npmYargs(hideBin(process.argv));
+
+import npmSass from 'sass';
+import gulpSass from 'gulp-sass';
+const pluginSass = gulpSass(npmSass);
 
 // Check for --develop or --dev flag
 const PRODUCTION = !(yargs.argv.develop || yargs.argv.dev);
@@ -115,15 +121,15 @@ function sass() {
 
   return gulp
     .src('src/assets/scss/style.scss')
-    .pipe($.sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(
         pluginSass({
         includePaths: PATHS.sass
       }).on('error', pluginSass.logError)
     )
-    .pipe($.postcss(postCssPlugins))
-    .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(postcss(postCssPlugins))
+    .pipe(gulpIf(PRODUCTION, cleanCss({ compatibility: 'ie9' })))
+    .pipe(gulpIf(!PRODUCTION, sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/css'))
     .pipe(browser.reload({ stream: true }));
 }
@@ -153,17 +159,17 @@ function javascript() {
   return gulp
     .src(PATHS.entries)
     .pipe(named())
-    .pipe($.sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(webpackStream(webpackConfig, webpack2))
     .pipe(
-      $.if(
+      gulpIf(
         PRODUCTION,
-        $.uglify().on('error', e => {
+        uglify().on('error', e => {
           console.error('Uglify error', e);
         })
       )
     )
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(gulpIf(!PRODUCTION, sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
 
@@ -173,7 +179,7 @@ function images_minify() {
   return gulp
     .src('src/assets/img/**/*')
     .pipe(
-      $.if(PRODUCTION, $.imagemin([$.imagemin.mozjpeg({ progressive: true })]))
+      gulpIf(PRODUCTION, imagemin([mozjpeg({ progressive: true })]))
     )
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
