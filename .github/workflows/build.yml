@@ -14,14 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
 
-    # Cypress Docker image with Chrome v80
-    # and Firefox v73 pre-installed  cypress/browsers:node14.7.0-chrome84 cypress/browsers:node10.16.3-chrome80-ff73
-    container: cypress/browsers:node18.6.0-chrome105-ff104
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Install root dependencies
       uses: bahmutov/npm-install@v1
