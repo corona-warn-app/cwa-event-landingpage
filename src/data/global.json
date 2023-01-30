@@ -116,22 +116,7 @@
                             "title": "+49 30 498 75401",
                             "url": "tel:+49 30 498 75401"
                         }
-                    ],
-                    "testid": "hotline-app"
-                },
-                {
-                    "title": "Hotline TAN",
-                    "links": [
-                        {
-                            "title": "0800 7540002",
-                            "url": "tel:08007540002"
-                        },
-                        {
-                            "title": "+49 30 498 75402",
-                            "url": "tel:+49 30 498 75402"
-                        }
-                    ],
-                    "testid": "hotline-tan"
+                    ]
                 }
             ],
             "copyright": {
@@ -248,22 +233,7 @@
                             "title": "+49 30 498 75401",
                             "url": "tel:+49 30 498 75401"
                         }
-                    ],
-                    "testid": "hotline-app"
-                },
-                {
-                    "title": "Hotline TAN",
-                    "links": [
-                        {
-                            "title": "0800 7540002",
-                            "url": "tel:08007540002"
-                        },
-                        {
-                            "title": "+49 30 498 75402",
-                            "url": "tel:+49 30 498 75402"
-                        }
-                    ],
-                    "testid": "hotline-tan"
+                    ]
                 }
             ],
             "copyright": {
