@@ -42,10 +42,6 @@
                             "url": "https://www.coronawarn.app/en/privacy/"
                         },
                         {
-                            "title": "Accessibility statement",
-                            "url": "https://coronawarn.app/en/accessibility"
-                        },
-                        {
                             "title": "Terms of use",
                             "url": "https://www.coronawarn.app/en/terms-of-use/"
                         },
@@ -116,26 +112,11 @@
                             "title": "+49 30 498 75401",
                             "url": "tel:+49 30 498 75401"
                         }
-                    ],
-                    "testid": "hotline-app"
-                },
-                {
-                    "title": "Hotline TAN",
-                    "links": [
-                        {
-                            "title": "0800 7540002",
-                            "url": "tel:08007540002"
-                        },
-                        {
-                            "title": "+49 30 498 75402",
-                            "url": "tel:+49 30 498 75402"
-                        }
-                    ],
-                    "testid": "hotline-tan"
+                    ]
                 }
             ],
             "copyright": {
-                "title": "© 2020-2022 - The authors of the Corona-Warn-App open-source project",
+                "title": "© 2020-2023 - The authors of the Corona-Warn-App open-source project",
                 "url": "https://github.com/corona-warn-app/cwa-event-landingpage/graphs/contributors",
                 "external": true
             }
@@ -175,10 +156,6 @@
                         {
                             "title": "Datenschutzerklärung",
                             "url": "https://www.coronawarn.app/de/privacy/"
-                        },
-                        {
-                            "title": "Barrierefreiheits&shy;erklärung",
-                            "url": "coronawarn.app/de/accessibility"
                         },
                         {
                             "title": "Nutzungsbedingungen",
@@ -248,26 +225,11 @@
                             "title": "+49 30 498 75401",
                             "url": "tel:+49 30 498 75401"
                         }
-                    ],
-                    "testid": "hotline-app"
-                },
-                {
-                    "title": "Hotline TAN",
-                    "links": [
-                        {
-                            "title": "0800 7540002",
-                            "url": "tel:08007540002"
-                        },
-                        {
-                            "title": "+49 30 498 75402",
-                            "url": "tel:+49 30 498 75402"
-                        }
-                    ],
-                    "testid": "hotline-tan"
+                    ]
                 }
             ],
             "copyright": {
-                "title": "© 2020-2022 - Mitwirkende Personen des Open-Source-Projekts für Corona-Warn-App",
+                "title": "© 2020-2023 - Mitwirkende Personen des Open-Source-Projekts für Corona-Warn-App",
                 "url": "https://github.com/corona-warn-app/cwa-event-landingpage/graphs/contributors",
                 "external": true
             }
