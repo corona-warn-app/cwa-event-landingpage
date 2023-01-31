@@ -9,7 +9,7 @@ RUN npm install
 
 # build/create 'public' folder 
 COPY config.yml ${WORK_DIR}/
-COPY gulpfile.js ${WORK_DIR}/
+COPY gulpfile.mjs ${WORK_DIR}/
 COPY src ${WORK_DIR}/src
 RUN npm run build
 
