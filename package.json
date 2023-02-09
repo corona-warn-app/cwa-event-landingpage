@@ -42,7 +42,6 @@
     "frontmatter": "0.0.3",
     "gulp-debug": "^4.0.0",
     "marked": "^4.0.19",
-    "moment": "^2.29.4",
-    "start-server-and-test": "^1.14.0"
+    "moment": "^2.29.4"
   }
 }
