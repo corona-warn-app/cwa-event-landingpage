@@ -33,7 +33,7 @@
     "sass": "^1.55.0",
     "trim-newlines": ">=3.0.1",
     "vinyl-named": "^1.1.0",
-    "webpack": "^5.74.0",
+    "webpack": "^5.76.0",
     "webpack-stream": "^7.0.0",
     "yargs": "^17.6.0"
   },
